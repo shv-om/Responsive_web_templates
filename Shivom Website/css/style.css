@@ -1,0 +1,218 @@
+/* Necessary for full page carousel*/
+html,
+body,
+.view {
+  height: 100%;
+}
+
+body {
+  background-color: #e6e6e6;
+}
+
+p {
+  font-size: 19px;
+  color: #636665;
+}
+
+table p {
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+  border-bottom: 2px;
+  margin: 0;
+  padding: 0;
+}
+
+hr {
+  border-top: 2px solid #fff;
+}
+
+.left-bar {
+  border-left: 4px solid white;
+}
+
+/* Headeer */
+
+.header{
+  background-color: white;
+  background-image: url("../img/background-shivom.jpg");
+  padding: 2rem;
+  background-size: cover;
+  min-height: 110%;
+}
+
+.header-heading{
+  color: white;
+  text-align: right;
+  font-size: 70px;
+  padding-top: 40%;
+  font-weight: bold;
+  text-shadow: 2px 2px 5px #5894f2;
+}
+
+.header-text{
+  color: white;
+  padding-top: 10rem;
+  font-size: 20px;
+  line-height: 45px;
+  letter-spacing: 1px;
+}
+
+/* Header Ends */
+
+/* Content */
+
+.content {
+  padding: 3rem;
+  background-color: white;
+  min-width: 100%;
+}
+
+.card {
+  text-align: center;
+  margin: 2rem 0;
+  padding: 2rem;
+  color: #000;
+  background-image: linear-gradient(260deg, rgb(0, 12, 36) 0%, rgb(28, 54, 111) 100%);
+  border: none;
+  border-bottom-right-radius: 50px;
+  border-top-left-radius: 50px;
+  box-shadow: 5px 5px 10px rgb(0, 12, 36);
+}
+
+.card:hover {
+  cursor: pointer;
+  box-shadow: 25px 25px 50px rgb(0, 12, 36);
+}
+
+.card-title {
+  color: #fff;
+  font-size: 24px;
+  letter-spacing: 2px;
+  font-weight: bolder;
+}
+
+.content-heading {
+  margin-bottom: 2rem;
+  font-size: 70px;
+  font-weight: bolder;
+  color: #1c366f;
+  text-align: center;
+  text-shadow: 1px 1px 2px;
+  letter-spacing: 5px;
+}
+
+.pricing-links li {
+  padding: 0.5rem;
+  font-weight: bolder;
+  text-align: left;
+  font-size: 18px;
+  color: #fff;
+}
+
+.pricing-links li:hover {
+  background-color: white;
+  color: #1c366f;
+  border-bottom-right-radius: 25px;
+  border-top-left-radius: 25px;
+  transition: all 0.5s ease-in;
+}
+
+/* Content Ends */
+
+
+/* Footer */
+footer {
+  background-image: linear-gradient(260deg, rgb(0, 12, 36) 0%, rgb(28, 54, 111) 100%);
+  width: 100%;
+  bottom: 0;
+  padding-top: 1.5rem;
+  padding-bottom: 0;
+}
+
+.footer-heading {
+  font-size: 26px;
+  font-weight: bolder;
+  color: #08df98;
+}
+
+.footer-heading:hover {
+  color: #fff;
+  cursor: pointer;
+  transition: color 0.8s ease-in;
+}
+
+.footer-text {
+  font-size: 18px;
+  color: white;
+  padding-left: 0.6rem;
+}
+
+.social-icons {
+  font-size: 24px;
+  color: white;
+  padding-left: 10px;
+}
+
+.footer-text:hover, .social-icons:hover {
+  color: #08df98;
+  text-decoration: none;
+  transition: color 0.8s ease-in;
+}
+
+footer ul li {
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+}
+
+footer div {
+  padding: 0.7rem;
+}
+
+.footer-list li{
+  display: inline;
+  padding-right: 20px;
+}
+
+.social-list li{
+  display: inline;
+  padding-right: 20px;
+}
+
+/* Footer Ends*/
+
+
+@media only screen and (max-width: 992px) {
+  .footer {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+  }
+
+  #footer-about_us {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .header-heading {
+    padding-top: 10%;
+    padding-bottom: 5rem;
+  }
+
+  .header-text {
+    padding-top: 7rem;
+  }
+
+  .footer-list li{
+    display: block;
+    padding-bottom: 10px;
+  }
+}
+
+@media only screen and (max-width: 586px) {
+  .header-heading{
+    font-size: 50px;
+  }
+}
