@@ -1,0 +1,298 @@
+/* Necessary for full page carousel*/
+html,
+body,
+.view {
+  height: 100%;
+}
+
+body {
+  background-color: #e6e6e6;
+}
+
+p {
+  font-size: 19px;
+  font-weight: bold;
+  color: #636665;
+  padding: 1rem;
+}
+
+table p {
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+  border-bottom: 2px;
+  margin: 0;
+  padding: 0;
+}
+
+hr {
+  border-top : 6pt solid #17829b;
+}
+
+
+/* Navigation*/
+.navbar {
+  background-color: #000;
+}
+.scrolling-navbar {
+  transition: background .5s ease-in-out, padding .5s ease-in-out;
+}
+.top-nav-collapse {
+  background-color: #161617;
+}
+
+.dropdown-menu a:hover {
+  background-color: #4f5255;
+  color: #fff;
+  font-weight: bold;
+}
+
+.nav-link {
+  color: #666;
+}
+
+.nav-link:hover {
+  color: #26df;
+  opacity: .8;
+  border-radius: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar {
+  }
+}
+
+/* Carousel */
+.carousel,
+.carousel-item,
+.carousel-item.active {
+  height: 100%;
+}
+.carousel-inner {
+  height: 100%;
+  margin-top: -60px;
+}
+.carousel-item:nth-child(1) {
+  background-image: url("../img/1.JPG");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.carousel-item:nth-child(2) {
+  background-image: url("../img/2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.carousel-item:nth-child(3) {
+  background-image: url("../img/3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+/* Cards */
+.card {
+  margin: 30px auto;
+  width: 350px;
+  height: 450px;
+  border-radius: 40px;
+  box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.card .card_image {
+  width: inherit;
+  height: inherit;
+  border-radius: 40px;
+}
+
+.card .card_image img {
+  width: inherit;
+  height: inherit;
+  border-radius: 40px;
+  object-fit: cover;
+}
+
+.card-img-overlay .card_title {
+  text-align: center;
+  border-radius: 0px 0px 40px 40px;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.card:hover {
+  transform: scale(0.9, 0.9);
+  box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
+    -5px -5px 30px 15px rgba(0,0,0,0.22);
+}
+
+.text-white {
+  color: white;
+}
+
+/* Card Styles Over */
+
+/* Article Page */
+.article-title {
+    width: 100%;
+    text-align: center;
+}
+
+.article-title .article-image-title {
+  width: 80%;
+  padding: 20pt;
+}
+
+.article-title h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  color: #17829b;
+}
+
+.article-content p {
+  padding: 1rem;
+  font-weight: 550;
+  color: #f4f4f4;
+  font-size: 1.5rem;
+  text-align: justify;
+}
+
+/* Ends */
+
+
+/* profile (about us) */
+
+.full_width_container {
+  display: flex;
+}
+
+.about_profile {
+  margin: 1rem;
+  padding: 20pt;
+}
+
+
+.profile-image {
+  width: 100%;
+  box-shadow: 5px 5px 10px 10px rgba(0,0,0,0.25);
+  border-radius: 5pt;
+}
+
+/* Ends */
+
+/* Footer */
+footer {
+  background-color: #000;
+  opacity: .9;
+  width: inherit;
+  bottom: 0;
+  padding-top: 1.5rem;
+  padding-bottom: 0;
+}
+
+footer ul li a, footer ul li{
+  color: #eeeae4;
+  padding-left: 7px;
+  font-weight: inherit;
+  font-size: 17px;
+}
+
+
+footer div {
+  padding: 1rem;
+}
+
+.h_list li{
+  display: inline;
+  padding-right: 20px;
+}
+
+@media only screen and (max-width: 981px) {
+  .footer {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+  }
+
+  #footer-about_us {
+    width: 100%;
+  }
+}
+
+/* Footer Ends*/
+
+/* Box Design */
+.left-border {
+  border-left: 4px solid #17829b;
+  padding-left: 2px;
+}
+
+.right-border {
+  border-right: 4px solid #17829b;
+  padding-right: 2px;
+}
+
+/* End Box Design */
+
+/* Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  position: relative;
+  opacity: 0.65;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.bgimg-1 {
+  background-image: url("../img/1.JPG");
+  min-height: 100%;
+}
+
+.bgimg-2 {
+  background-image: url("../img/2.JPG");
+  min-height: 400px;
+}
+
+.bgimg-3 {
+  background-image: url("../img/3.JPG");
+  min-height: 400px;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
+.profile_img {
+  width:100%;
+  height:auto;
+  margin-top:28px;
+  opacity:.8;
+  border-radius: 12px;
+}
+
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+  }
+}
+
+/* Parallax Effect Over */
